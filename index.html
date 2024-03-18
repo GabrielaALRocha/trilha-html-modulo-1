@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página - Módulo I - Primeiros Passos com HTML</title>
+</head>
+
+<body>
+    <h1 id="inicio">Resumo das aulas de HTML básico</h1>
+    <hr />
+    <h2>Índice</h2>
+    <ul>
+        <li><a href="#1">Sobre TAGS</a></li>
+        <li><a href="#2">Sobre Atributos</a></li>
+        <li><a href="#3">Sobre tag de textos</a></li>
+        <li><a href="#4">Sobre Listas e links</a></li>
+        <li><a href="#5">Links de referências</a></li>
+    </ul>
+
+    <h2 id="1">Sobre TAGS</h2>
+    <p>
+        As tags HTML são elementos utilizados para estruturar e formatar o conteúdo de uma página da web. Elas são
+        compostas por um nome entre colchetes angulares <> e podem conter atributos que fornecem informações adicionais
+            sobre o elemento. As tags são usadas para definir a estrutura do documento, como títulos, parágrafos,
+            imagens, links e muito mais.<br>
+            Segue alguns exemplos de tags abaixo:<br>
+            <b>
+                < img> (Imagem):
+                    A tag < img> é usada para incorporar imagens em uma página da web. O atributo src especifica o URL
+                        da
+                        imagem e o atributo alt fornece um texto alternativo para a imagem, útil para acessibilidade e
+                        quando a
+                        imagem não pode ser carregada.
+            </b><br><br>
+            <b>
+                < table>, < tr>, < td> (Tabela, Linha e Célula):
+                            As tags < table>, < tr> e < td> são usadas para criar tabelas em uma página da web. <table>
+                                            define a tabela, < tr> define as linhas e < td> define as células.
+            </b>
+
+    </p>
+    <small><a href="#inicio">(voltar)</a></small>
+    <h2 id="2">Sobre Atributos</h2>
+    <p>
+        Em HTML, além dos elementos de marcação (tags) que definem a estrutura e o conteúdo de uma página da web,
+        podemos também utilizar atributos para fornecer informações adicionais sobre esses elementos. Os atributos são
+        especificados dentro das tags e fornecem instruções ou detalhes específicos sobre como um elemento deve ser
+        tratado ou exibido pelo navegador.<br><br>
+        Alguns Atributos Comuns:
+        <br>
+        <b>id:</b> Define um identificador exclusivo para um elemento, permitindo referenciar esse elemento em scripts
+        ou estilos CSS.
+
+        Exemplo: < div id="conteudo">...
+            < />
+            <br><br>
+            <b>class:</b> Define uma ou mais classes para um elemento, permitindo estilizar vários elementos com as
+            mesmas propriedades CSS.
+
+            Exemplo: < p class="destaque">...
+                < />
+                <br><br>
+                <b>src:</b> Especifica o URL de origem para elementos como imagens, áudio ou vídeo.
+
+                Exemplo: < img src="imagem.jpg" alt="Descrição da imagem">
+                    <br><br>
+                    <b>alt:</b> Fornece um texto alternativo para elementos como imagens, útil para acessibilidade e
+                    quando a imagem não pode ser carregada.
+
+                    Exemplo: < img src="imagem.jpg" alt="Descrição da imagem">
+                        <br><br>
+                        <b>style:</b> Define estilos CSS diretamente no elemento, como cor, tamanho, margem, etc.
+
+                        Exemplo: < p style="color: red; font-size: 16px;">Texto vermelho em 16px
+                            < />
+                            <br><br>
+                            <b>title:</b> Fornece um título para o elemento, geralmente exibido como uma dica de
+                            ferramenta quando o usuário passa o mouse sobre o elemento.
+
+                            Exemplo: < a href="#" title="Clique aqui para mais informações">Mais informações
+                                < />
+    </p>
+    <small><a href="#inicio">(voltar)</a></small>
+    <h2 id="3">Sobre tag de textos</h2>
+    <p>
+        Quando se trata de criar uma página da web, a formatação e a estruturação adequadas do texto são essenciais para
+        garantir uma experiência de usuário agradável e acessível. As tags HTML desempenham um papel crucial nesse
+        processo, oferecendo uma variedade de elementos para definir títulos, parágrafos, estilos de texto e muito mais.
+        Neste contexto, é fundamental compreender as principais tags HTML utilizadas para manipular e apresentar texto
+        de forma eficaz. Vamos explorar algumas dessas tags e entender como elas podem ser aplicadas para criar conteúdo
+        textual coeso e bem organizado em uma página da web.
+        principais tags HTML para formatação de textos em uma página da web:
+
+        Títulos (Heading Tags): Utilizamos as tags < h1> a < h6> para definir títulos e subtítulos em diferentes níveis
+                de importância. O < h1> é o título principal, enquanto < h6> é o menos importante.
+
+                        Parágrafos (Paragraph Tag): A tag < p> é usada para separar e estruturar o conteúdo textual em
+                            parágrafos distintos.
+
+                            Texto em Negrito e Itálico: Para enfatizar certas partes do texto, usamos < strong> para
+                                texto em negrito e < em> para texto em itálico.
+
+                                    Elemento Genérico para Estilização: A tag < span> é um elemento genérico usado para
+                                        aplicar estilos específicos a partes do texto, sem implicar em quebra de linha.
+
+                                        Quebra de Linha (Line Break): Quando queremos inserir uma quebra de linha dentro
+                                        de um texto, utilizamos a tag < br>, que é útil para separar visualmente
+                                            diferentes elementos ou partes de um texto.
+
+                                            Bloco de Citação: A tag < blockquote> é usada para destacar um bloco de
+                                                texto como uma citação de outra fonte. Geralmente, este bloco é exibido
+                                                em um formato distinto para diferenciá-lo do restante do conteúdo.
+    </p>
+    <small><a href="#inicio">(voltar)</a></small>
+    <h2 id="4">Sobre Listas e links</h2>
+    <p>
+        As listas permitem agrupar informações de maneira organizada e hierárquica. Existem três tipos principais de
+        listas em HTML: listas não ordenadas, listas ordenadas e listas de definição.<br>
+
+        As listas não ordenadas são ideais para itens que não têm uma ordem específica. Elas são representadas por
+        elementos '< ul>' (unordered list) e cada item da lista é definido pelo elemento '< li>' (list item).
+                Visualmente, os itens são geralmente marcados com bullets (pontos, círculos ou quadrados), dependendo do
+                estilo do navegador ou das definições de estilo do desenvolvedor.<br>
+                Por Exemplo: <br>
+                <blockquote>
+                    '< ul> <br>
+                        < li> Item 1
+                            <  /li><br>
+                            < li> Item 2
+                                <  /li><br>
+                                < li>Item 3
+                                    <  /li><br>
+                                    <  /ul>'
+                </blockquote>
+                <br>
+                Já as listas ordenadas são utilizadas quando a ordem dos itens é relevante. Elas são definidas pelo
+                elemento < ol> (ordered list), e cada item é também representado pelo elemento < li> <br>
+                        Por fim, as listas de definição são utilizadas para definir termos e suas respectivas
+                        definições. Elas são construídas com os elementos < dl> (definition list), < dt> (definition
+                                term) para os termos, e < dd> (definition description) para as definições.<br>
+
+                                    Exemplo:
+                                    <blockquote>
+                                        < dl>
+                                            < dt>HTML
+                                                <  /dt><br>
+                                                < dd>Linguagem de marcação utilizada para criar páginas web.
+                                                    <  /dd><br>
+                                                    < dt>CSS
+                                                        <  /dt><br>
+                                                        < dd>Linguagem de estilos utilizada para estilizar páginas web.
+                                                            <  /dd><br>
+                                                            <  /dl>
+                                    </blockquote>
+       Além das listas, os links são cruciais para a navegação e interatividade em uma página web. Em HTML, os links são criados com o elemento < a> (anchor). Eles podem apontar para diferentes recursos, como outras páginas web, arquivos de mídia ou seções dentro da mesma página.<br>
+         Um link básico pode ser definido da seguinte maneira:<br>
+         '< a href="https://www.exemplo.com">Texto do Link< /a>'<br><br>
+         Em suma, as listas e os links são elementos essenciais no desenvolvimento web. Eles ajudam a estruturar o conteúdo de uma página e facilitam a navegação dos usuários pela web. Dominar o uso correto desses elementos é fundamental para criar páginas web bem organizadas e funcionais.
+    </p>
+    <small><a href="#inicio">(voltar)</a></small>
+    <h2 id="5">Links de referências</h2>
+    <p><strong><u>Links utilizados de referencia para montar essa página:</u> </strong>
+    <ol>
+        <li><a href="https://web.dio.me/track/facf3f2a-4c2d-4250-be5b-93bb4d12995e" target="_blank">http://dio.me</a></li>
+        <li><a href="http://w3c.org" target="_blank">http://w3c.org</a></li>
+        <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/a" target="_blank">https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/a</a></li>
+    </ol>
+    <small><a href="#inicio">(voltar)</a></small>
+</body>
+
+</html>
